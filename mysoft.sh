@@ -81,3 +81,24 @@ nmap <space> <s-:>
 sudo apt-get install tmux
 #download配置文件：
 wget https://github.com/zhaohuaxishi/dotfiles/blob/master/.tmux.conf ~/
+
+
+#10、翻墙软件安装
+ssr、v2ray获取网站：http://free-ss.tk/ ；ssr获取邮箱：ss@rohankdd.com
+
+#1）ssr
+#ssr安装配置（参考blog：https://www.djangoz.com/2017/08/16/linux_setup_ssr/）：
+#脚本丢失请百度网盘查找
+wget --no-check-certificate https://www.djangoz.com/ssr
+sudo mv ssr /usr/local/bin
+sudo chmod 766 /usr/local/bin/ssr
+ssr install
+ssr config
+
+
+#2）v2ray
+#安装请参考页面https://toutyrater.github.io/prep/install.html
+#脚本丢失请百度网盘查找
+wget https://install.direct/go.sh
+sudo bash go.sh
+
