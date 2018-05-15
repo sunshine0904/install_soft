@@ -102,3 +102,26 @@ ssr config
 wget https://install.direct/go.sh
 sudo bash go.sh
 
+
+
+#11、安装awn桌面工具
+:<<BLOCK
+Avant Window Navigator主页：https://launchpad.net/awn/
+theme下载：http://wiki.awn-project.org/Themes
+Applets下载：http://wiki.awn-project.org/Applet_Gallery
+图标下载：http://guistyles.com/category/icons/dock-icons/ 
+BLOCK
+sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo apt-get update
+sudo apt-get install avant-window-navigator
+
+
+#12、git初始化
+#1)、生成ssh指纹
+    ssh-keygen -t rsa -b 4096 -C "sunshine0904"
+#2）、添加ssh到ssh-agent中
+    eval "$(ssh-agent -s)"
+#3)、github上添加公钥
+
+#4)、关联本地仓库和远程仓库的方法见博客
+#https://blog.csdn.net/sun172270102/article/details/50932210
